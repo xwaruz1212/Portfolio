@@ -16,20 +16,20 @@ const Navbar = () => {
             </Link>
             <nav>
         <NavLink exact="true" activeclassname="active" to="/">
-          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faHome} color="#000" />
         </NavLink>
         <NavLink activeclassname="active" className="AboutMe-link" to="/AboutMe">
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faUser} color="#000" />
         </NavLink>
         <NavLink activeclassname="active" className="Projects-link" to="/Projects">
-          <FontAwesomeIcon icon={faComputer} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faComputer} color="#000" />
         </NavLink>
         <NavLink
           activeclassname="active"
           className="ContactMe-link"
           to="/ContactMe"
         >
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faEnvelope} color="#000" />
         </NavLink>
       </nav>
       <ul>
@@ -39,7 +39,7 @@ const Navbar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faLinkedin} color="#d90429" />
+            <FontAwesomeIcon icon={faLinkedin} color="#000" />
           </a>
         </li>
         <li>
@@ -48,7 +48,7 @@ const Navbar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} color="#d90429" />
+            <FontAwesomeIcon icon={faGithub} color="#000" />
           </a>
         </li>
       </ul>
