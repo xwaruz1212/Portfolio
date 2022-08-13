@@ -15,19 +15,28 @@ const Navbar = () => {
                 <img src={LogoK} alt="logo" />
             </Link>
             <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
+        <NavLink 
+          exact="true" 
+          activeclassname="active" 
+          to="/">
           <FontAwesomeIcon icon={faHome} color="#000" />
         </NavLink>
-        <NavLink activeclassname="active" className="AboutMe-link" to="/AboutMe">
+        <NavLink 
+          activeclassname="active" 
+          className="About-link" 
+          to="/About">
           <FontAwesomeIcon icon={faUser} color="#000" />
         </NavLink>
-        <NavLink activeclassname="active" className="Projects-link" to="/Projects">
+        <NavLink 
+          activeclassname="active" 
+          className="Experience-link" 
+          to="/Experience">
           <FontAwesomeIcon icon={faComputer} color="#000" />
         </NavLink>
         <NavLink
           activeclassname="active"
-          className="ContactMe-link"
-          to="/ContactMe"
+          className="Contact-link"
+          to="/Contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#000" />
         </NavLink>

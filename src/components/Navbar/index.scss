@@ -71,19 +71,19 @@
         }
       }
     }
-    a.AboutMe-link {
+    a.About-link {
       &:after {
         content: 'ABOUT ME';
       }
     }
-    a.ContactMe-link {
+    a.Contact-link {
       &:after {
         content: 'CONTACT ME';
       }
     }
-    a.Projects-link {
+    a.Experience-link {
       &:after {
-        content: 'PROJECTS';
+        content: 'Experience';
       }
     }
     a.active {
