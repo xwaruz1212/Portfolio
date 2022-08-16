@@ -5,6 +5,9 @@
   margin-left: 14%;
   top: 23%;
   position: absolute;
+  &:hover {
+    color: #ffffff73;
+  }
 
 }
 
@@ -15,6 +18,9 @@
   transform: translateX(220%);
   top: 23%;
   position: absolute;
+  &:hover {
+    color: #ffffff73;
+  }
 
   ul{
     list-style: none;

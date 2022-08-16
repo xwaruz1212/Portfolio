@@ -5,6 +5,9 @@
   color: #000000c3;
   letter-spacing: 5px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  &:hover {
+    color: #ffffff73;
+  }
 }
 
 .Left-Side {
@@ -17,6 +20,9 @@
     font-size: 40px;
     font-weight: 300;   
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    &:hover {
+      color: #ffffff73;
+    }
   }
 
   .flat-button {
