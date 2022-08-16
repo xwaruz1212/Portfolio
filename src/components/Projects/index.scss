@@ -21,33 +21,108 @@
         display: flex;
         font-size: 80px;
 
-        h1 {
-            padding: 0;
-            margin: 0;
-        }
-
         .one {
+            width: 10%;
+            height: 30%;
+            font-size: 200px;
+            position: absolute;;
             transform: translate(150%,50%);
             color: #264de4;
+
+            &:hover .overlay {
+                transform: scale(1);
+                
+              }
         }
         .two {
-            transform: translate(380%,50%);
+            width: 10%;
+            height: 30%;
+            font-size: 200px;
+            position: absolute;
+            transform: translate(450%,55%);
             color: yellow;
+
+            &:hover .overlay {
+                transform: scale(1);
+                
+              }
         }
         .three {
-            transform: translate(680%,50%);
+            width: 10%;
+            height: 30%;
+            font-size: 200px;
+            position: absolute;
+            transform: translate(740%,60%);
             color: #e34c26;
+
+            &:hover .overlay {
+                transform: scale(1);
+                
+              }
         }
         .four {
-            transform: translate(-120%,130%);
+            width: 10%;
+            height: 30%;
+            font-size: 200px;
+            position: absolute;
+            transform: translate(150%, 180%);
             color: black;
+
+            &:hover .overlay {
+                transform: scale(1);
+                
+              }
         }
         .five {
-            transform: translate(50%,130%);
+            width: 10%;
+            height: 30%;
+            font-size: 180px;
+            position: absolute;
+            transform: translate(440%,180%);
             color: #CD6799;
+
+            &:hover .overlay {
+                transform: scale(1);
+                
+              }
         }
         .six {
-            transform: translate(110%,130%);
+
+            img{
+                max-width: 200px;
+                max-height: 200px;
+            }
+            width: 10%;
+            height: 30%;
+            position: absolute;
+            transform: translate(720%,180%);
+
+            &:hover .overlay {
+                transform: scale(1);
+                
+              }
         }
     }
+    .overlay {
+        position: absolute;
+        bottom: -30px;
+        left: -80px;
+        right: 0px;
+        background-color: #003566;
+        overflow: hidden;
+        width: 240%;
+        height: 100%;
+        transform: scale(0);
+        transition: .15s ease;
+
+        .p-text {
+            color: #ffffff73;
+            font-size: 12px;
+            position: absolute;
+            top: 30%;
+            left: 7%;
+            text-align: justify;
+          }
+      }
+      
 }
