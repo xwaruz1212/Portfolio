@@ -1,0 +1,53 @@
+.page-cont {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    .text {
+        position: absolute;
+        width: 20%;
+        height: 10%;
+        font-size: 70px;
+        transform: translate(195%, -50%);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #000000c3;
+
+        &:hover {
+            color: #ffffff73;
+        }
+    }
+    .icons {
+        display: flex;
+        font-size: 80px;
+
+        h1 {
+            padding: 0;
+            margin: 0;
+        }
+
+        .one {
+            transform: translate(150%,50%);
+            color: #264de4;
+        }
+        .two {
+            transform: translate(380%,50%);
+            color: yellow;
+        }
+        .three {
+            transform: translate(680%,50%);
+            color: #e34c26;
+        }
+        .four {
+            transform: translate(-120%,130%);
+            color: black;
+        }
+        .five {
+            transform: translate(50%,130%);
+            color: #CD6799;
+        }
+        .six {
+            transform: translate(110%,130%);
+        }
+    }
+}
