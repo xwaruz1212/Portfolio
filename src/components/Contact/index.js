@@ -15,7 +15,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'gmail',
+        'service_wtrqxt9',
         'template_qpdq14m',
         form.current,
         'r_r37kMJJEsw6yXsA'
