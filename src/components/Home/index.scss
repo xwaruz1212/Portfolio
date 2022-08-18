@@ -131,15 +131,16 @@
 @media screen and (max-width: "1000px") {
 
   .Text {
-    transform: translateX(14%);
+    transform: translateX(2%);
   }
   .stage-cube-cont {
     width: 200px;
     height: 200px;
-    top: 20%;
-    left: 40%;
+    align-items: center;
+    right: 25%;
     position: absolute;
     overflow: visible;
+    transform: translateY(10%);
     
   }
 
@@ -147,10 +148,10 @@
     animation-name: spincube;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
-    animation-duration: 25s;
+    animation-duration: 5s;
     transform-style: preserve-3d;
     transform-origin: 75px 75px 0;
-    margin-left: calc(50% - 100px);
+    margin-left: calc(0%);
   
     div {
       position: absolute;
@@ -162,7 +163,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 0 50px 0px #352929c5;
+      box-shadow: 0 0 20px 0px #352929c5;
 
       img {
         max-height: 100px;
@@ -197,14 +198,16 @@
 
   }
   .Left-Side {
+    width: 50%;
     margin-top: 80%;
-    margin-left: 0%;
     text-transform: uppercase;
     color: #000000c3;
     letter-spacing: 2px;
+    transform: translateX(50%);
+    text-align: center;
 
     :first-child{
-      font-size: 300%;  
+      font-size: 25px;  
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
       &:hover {
         color: #ffffff73;
@@ -212,8 +215,10 @@
     }
 
     .flat-button {
-      margin-top: 10px;
-      margin-left: 0%;
+      position: absolute;
+      margin-top: -3%;
+      right: -20%;
+      left: -60%;
     }
   }
   

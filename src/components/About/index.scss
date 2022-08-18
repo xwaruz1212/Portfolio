@@ -60,8 +60,8 @@
 
 @media screen and (max-width: "1000px") {
     .page-container {
-        position: relative;
-        margin: -50%;
+        position: absolute;
+        overflow: hidden;
         
         .title {
             right: -62%;

@@ -19,7 +19,7 @@ const Home = () => {
       <div className='Left-Side'>
         <h1 className='name'> 
           Kacper Zurawski <br />
-          Front-End Developer <br />
+          Front-End <br /> Developer <br />
             <Link 
               to="/Contact" 
               className="flat-button">
