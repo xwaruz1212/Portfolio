@@ -4,7 +4,7 @@
   font-size: 50px;
   margin-left: 14%;
   top: 23%;
-  position: absolute;
+  position: relative;
   &:hover {
     color: #ffffff73;
   }
@@ -35,7 +35,7 @@
   }
 }
 .contact-form {
-  transform: translate(20%, 120%);
+  transform: translate(20%, 70%);
   width: 50%;
 
     ul {
@@ -48,7 +48,7 @@
         padding: 3px;
         margin: 0;
         list-style: none;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
         overflow: hidden;
         display: inline;
         clear: both;
@@ -95,6 +95,36 @@
   }
 }
 
-@media screen and (max-width: "1000px") {
+@media screen and (min-width: "1500px") and (min-height: "930px") {
+  .head-left {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 70px;
+    margin-left: 10%;
+    top: 15%;
+    position: relative;
+  }
+
+  .head-right {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 70px;
+    transform: translateX(170%);
+    top: 15%;
+    position: absolute;
+    &:hover {
+      color: #ffffff73;
+    }
   
+    ul{
+      list-style: none;
+      display: flex;
+      margin-left: 20%;
+      margin-top: 5%;
+    }
+  }
+
+  .contact-form {
+    transform: translate(20%, 50%);
+  }
 }
