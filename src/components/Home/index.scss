@@ -127,3 +127,96 @@
     transform: rotateX(90deg);
   }
 }
+
+@media screen and (max-width: "1000px") {
+
+  .Text {
+    transform: translateX(14%);
+  }
+  .stage-cube-cont {
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    left: 40%;
+    position: absolute;
+    overflow: visible;
+    
+  }
+
+  .cubespinner {
+    animation-name: spincube;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+    transform-style: preserve-3d;
+    transform-origin: 75px 75px 0;
+    margin-left: calc(50% - 100px);
+  
+    div {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: #000000c3;
+      text-align: center;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 50px 0px #352929c5;
+
+      img {
+        max-height: 100px;
+        margin-bottom: 30%;
+      }
+    }
+
+    .face1 {
+      transform: translateZ(100px);
+      color: #e34c26;
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(100px);
+      color: #264de4;
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+      color: #264de4;
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+      color: yellow;
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+      
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(100px);
+      color: #CD6799;
+    }
+
+  }
+  .Left-Side {
+    margin-top: 80%;
+    margin-left: 0%;
+    text-transform: uppercase;
+    color: #000000c3;
+    letter-spacing: 2px;
+
+    :first-child{
+      font-size: 300%;  
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      &:hover {
+        color: #ffffff73;
+      }
+    }
+
+    .flat-button {
+      margin-top: 10px;
+      margin-left: 0%;
+    }
+  }
+  
+
+
+}

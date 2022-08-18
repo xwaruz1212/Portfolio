@@ -117,3 +117,34 @@
   }
   
   }
+
+@media screen and (max-width: "1000px") {
+  .nav-bar {
+    background-color:#ffffff73;
+    width: 125%;
+    height: 100px;
+    position: absolute;
+    bottom: -25%;
+    z-index: 3;
+
+    nav {
+      transform: translate(-23%, -20%);
+
+
+      a{
+        font-size: 35px;
+      }
+    }
+
+    li {
+      visibility: hidden;
+    }
+
+    
+  }
+  img {
+    transform: translateY(38%);
+  }
+  
+
+}
