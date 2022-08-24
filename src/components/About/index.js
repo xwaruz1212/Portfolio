@@ -14,9 +14,9 @@ const [nextImage, setNextImage] = useState(true);
                     <h1>
                         About Me
                     </h1>
-                </div> 
+                </div>
+                <p className='front'>Hi! My name is Kacper. I am passionate programmer from Poland. <br></br></p>
                 <p className='about-text'>
-                        <h2 className='h3'>Hi! My name is Kacper. I am passionate programmer from Poland. <br></br></h2>
                         I started learning programming in 2020. At first it was only a hobby, but this year it became my passion.
                         I had some short episodes with C and C++ and then finally I discovered web development. 
                         I decided that this is the thing that I want to do and even resigned from  law studies, to fully focus on programming. 

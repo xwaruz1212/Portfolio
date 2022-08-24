@@ -97,28 +97,17 @@
 
 @media screen and (min-width: "1500px") and (min-height: "930px") {
   .head-left {
-    text-transform: uppercase;
-    color: #000000;
     font-size: 70px;
     margin-left: 10%;
     top: 15%;
-    position: relative;
   }
 
   .head-right {
-    text-transform: uppercase;
-    color: #000000;
     font-size: 70px;
     transform: translateX(170%);
     top: 15%;
-    position: absolute;
-    &:hover {
-      color: #ffffff73;
-    }
   
     ul{
-      list-style: none;
-      display: flex;
       margin-left: 20%;
       margin-top: 5%;
     }
@@ -127,4 +116,4 @@
   .contact-form {
     transform: translate(20%, 50%);
   }
-}
+} 
