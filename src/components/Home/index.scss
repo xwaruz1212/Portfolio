@@ -62,7 +62,7 @@
   animation-name: spincube;
   animation-timing-function: ease-out;
   animation-iteration-count: infinite;
-  animation-duration: 15s;
+  animation-duration: 10s;
   transform-style: preserve-3d;
   transform-origin: 75px 75px 0;
   margin-left: calc(50% - 100px);
@@ -137,6 +137,7 @@
 
   .Text {
     transform: translateY(0%);
+    font-size: 50px;
   }
   .stage-cube-cont {
     width: 200px;
@@ -145,20 +146,14 @@
     right: 25%;
     position: absolute;
     overflow: visible;
-    transform: translateY(40%);
+    transform: translateY(20%);
     
   }
 
   .cubespinner {
-    animation-name: spincube;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    transform-style: preserve-3d;
     transform-origin: 125px 100px 0;
   
     div {
-      position: absolute;
       width: 200px;
       height: 200px;
       background: #000000c3;
@@ -177,42 +172,36 @@
 
     .face1 {
       transform: translateZ(100px);
-      color: #e34c26;
     }
     .face2 {
       transform: rotateY(90deg) translateZ(100px);
-      color: #264de4;
     }
     .face3 {
       transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-      color: #264de4;
     }
     .face4 {
       transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-      color: yellow;
     }
     .face5 {
       transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-      
     }
     .face6 {
       transform: rotateX(-90deg) translateZ(100px);
-      color: #CD6799;
     }
 
   }
   .Left-Side {
     width: 50%;
-    margin-top: 100%;
     text-transform: uppercase;
     color: #000000c3;
     letter-spacing: 2px;
-    transform: translateX(20%);
+    transform: translate(20%, 500%);
     text-align: left;
 
     :first-child{
-      font-size: 25px;  
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      font-size: 15px;  
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 500;
       &:hover {
         color: #ffffff73;
       }
@@ -221,9 +210,8 @@
     .flat-button {
       position: absolute;
       font-size: 15px;
-      margin-top: -30%;
       right: -75%;
-      left: 40%;
+      left: 30%;
     }
   }
   

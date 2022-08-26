@@ -75,27 +75,27 @@
             top: 2%;
 
             h1 {
-                font-size: 70px;
+                font-size: 50px;
             }
         }
 
         .about-text {
             width: 90%;
-            transform: translate(5%, 50%);
+            transform: translate(5%, 40%);
             text-align: center;
-            font-size: 16px;
+            font-size: 13px;
             margin: 0px;
             padding: 0px;
         }
 
         .front{
-            transform: translate(10%, 120%);
+            transform: translate(0%, 60%);
             font-size: 20px;
             width: 50%;
         }
 
         .img-cont {
-            transform: translate(65%, -270%);
+            transform: translate(60%, -260%);
             img {
                 max-width: 150px;
                 max-height: 120px;
