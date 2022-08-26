@@ -67,6 +67,26 @@
     }
 }
 
+@media screen and (min-width: "1500px") and (min-height: "930px") {
+    .page-container {
+        .front{
+            font-size: 40px;
+            transform: translate(35%, 120%);
+        }
+        .about-text {
+            font-size: 20px;
+            transform: translate(33%, 50%);
+        }
+        .img-cont {
+            transform: translate(50%, -65%);
+            img {
+                max-width: 1060px;
+                max-height: 600px;
+            }
+            }
+    }
+}
+
 @media screen and (max-width: "1000px") {
     .page-container {
         

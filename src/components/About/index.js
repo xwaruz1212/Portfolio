@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Me2 from '../../assets/images/Me.jpeg'
-import Me from '../../assets/images/Me2.png'
+import Me from '../../assets/images/Me2.jpg'
 import './index.scss'
 
 const About = () => {
