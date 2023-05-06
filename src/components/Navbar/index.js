@@ -44,7 +44,7 @@ const Navbar = ({ toggle }) => {
                 to="skills"
                 spy={true}
                 smooth={true}
-                offset={-90}
+                offset={-120}
                 duration={800}
                 delay={100}
               >
