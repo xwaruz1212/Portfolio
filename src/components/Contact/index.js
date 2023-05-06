@@ -1,106 +1,49 @@
-import { useRef } from 'react'
-import emailjs from '@emailjs/browser'
+import React from 'react'
+import { ContactContainer, ContactContent, ContactH1, CvContent, CvH1, CvImg, IconG, IconL, Icons, ImgLink, Footer, TextP } from './ContactElements';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faLinkedin,
-    faGithub,
-  } from '@fortawesome/free-brands-svg-icons'
-import './index.scss'
+    faGithub
+} from '@fortawesome/free-brands-svg-icons'
+import CV from '../../images/CV.png'
+import CvPdf from '../../documents/CV.pdf'
+import { FaMobile, FaRegEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
-  const form = useRef()
+    return (
+        <>
+            <ContactContainer id="contact">
+                <ContactContent>
+                    <ContactH1>Find me there:</ContactH1>
+                    <Icons>
+                        <IconL href="https://www.linkedin.com/in/kacper-%C5%BCurawski/"
+                            target="_blank"
+                            rel="noreferrer">
+                            <FontAwesomeIcon icon={faLinkedin} color="#0072b1" />
+                        </IconL>
+                        <IconG
+                            href="https://github.com/xwaruz1212"
+                            target="_blank"
+                            rel="noreferrer">
+                            <FontAwesomeIcon icon={faGithub} color="#000" />
+                        </IconG>
+                    </Icons>
+                    <Footer>
+                        <TextP><FaRegEnvelope style={{ color: 'black' }} /> kacperzurawski.kz@gmail.com</TextP>
+                        <TextP><FaMobile style={{ color: 'black' }} /> +447405699897</TextP>
+                        <TextP><FaMobile style={{ color: 'black' }} /> +48535506372</TextP>
+                    </Footer>
+                </ContactContent>
+                <CvContent>
+                    <CvH1> Check out my CV:</CvH1>
+                    <ImgLink href={CvPdf} target="_blank" rel="noopener noreferrer">
+                        <CvImg src={CV} />
+                    </ImgLink>
 
-  const sendEmail = (e) => {
-    e.preventDefault()
-
-    emailjs
-      .sendForm(
-        'service_wtrqxt9',
-        'template_qpdq14m',
-        form.current,
-        'r_r37kMJJEsw6yXsA'
-      )
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send the message, please try again')
-        }
-      )
-  }
-
-  return (
-    <>
-
-        <h1 className='head-left'>
-            Contact Me here:
-        </h1>
-        <h1 className='head-right'>
-            find me there: <br />
-        <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/kacper-%C5%BCurawski/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedin} color="#0072b1" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/xwaruz1212"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} color="#000" />
-          </a>
-        </li>
-      </ul>
-        </h1>
-        <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
-              <ul>
-                <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
-                </li>
-                <li className="half">
-                  <input
-                    placeholder="Email"
-                    type="email"
-                    name="email"
-                    required
-                  />
-                </li>
-                <br />
-                <br />
-                <li className='half'>
-                  <input
-                    placeholder="Subject"
-                    type="text"
-                    name="subject"
-                    required
-                  />
-                </li>
-                <br />
-                <br />
-                <li>
-                  <textarea
-                    placeholder="Message"
-                    name="message"
-                    required>
-                    </textarea>
-                </li>
-                <li className="flat-button">
-                  <input type="submit" value="SEND" />
-                </li>
-              </ul>
-            </form>
-        </div>
-    </>
-  )
+                </CvContent>
+            </ContactContainer>
+        </>
+    );
 }
 
 export default Contact;
