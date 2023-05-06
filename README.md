@@ -1,6 +1,6 @@
 # PERSONAL PORTFOLIO WEBSITE
 
-Created in React with Styled Components and more...
+Created in React with Styled Components
 
 https://kacperzurawski.netlify.app/
 
