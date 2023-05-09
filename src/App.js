@@ -1,12 +1,16 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./pages";
+import Projects from "./components/Projects";
 
 const App = () => {
   return (
     <Router>
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} exact />
+        <Route path="/projects" element={<Projects />} exact />
+      </Routes>
     </Router>
   );
 };

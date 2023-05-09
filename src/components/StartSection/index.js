@@ -13,6 +13,7 @@ import {
   Face4,
   Face5,
   Face6,
+  ProjectPage,
 
 } from "./StartComponents";
 import {
@@ -45,6 +46,11 @@ const StartSection = () => {
             {" "}
             Contact Me
           </ContactLink>
+          <ProjectPage
+            to="/projects"
+          >
+            My Projects
+          </ProjectPage>
         </StartContent>
         <StageCubeCont>
           <Cubespinner>

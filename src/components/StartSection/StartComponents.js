@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
+import { Link as LinkPage } from "react-router-dom";
 
 export const StartContainer = styled.div`
   width: 100%;
@@ -86,6 +87,36 @@ export const ContactLink = styled(LinkScroll)`
     padding: 1rem;
     border: 2px solid black;
     color: black;
+    background-color: white;
+    border-radius: 3rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    align-self: center;
+    transition-duration: 2s;
+    margin-top: 5vh;
+
+    &:hover {
+        background: black;
+        color: white;
+        width: 15vw;
+    }
+
+    @media Screen and (max-width: 768px) {
+        width: 70vw;
+
+        &:hover {
+            width: 60vw;
+        }
+      }
+`;
+
+export const ProjectPage = styled(LinkPage)`
+    width: 30vw;
+    padding: 1rem;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
     background-color: white;
     border-radius: 3rem;
     cursor: pointer;
