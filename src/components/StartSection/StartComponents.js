@@ -35,9 +35,9 @@ export const StartContent = styled.div`
   z-index: 3;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   top: 30vh;
-  left: 10vw;
+  left: 3vw;
 
   @media Screen and (max-width: 1600px) {
     top: 15vh;
@@ -181,7 +181,7 @@ export const StageCubeCont = styled.div`
   @media Screen and (max-width: 768px) {
     width: 2rem;
     height: 2rem;
-    top: 60vh;
+    top: 70vh;
     right: 35vw;
   }
 `;

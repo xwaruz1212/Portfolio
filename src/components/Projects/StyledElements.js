@@ -39,6 +39,10 @@ export const ProjectsContainer = styled.div`
     position: absolute;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+        height: 140vh;
+    }
 `;
 
 export const ProjectsText = styled.h1`
@@ -62,6 +66,10 @@ export const ProjectsSection = styled.div`
     align-items: center;
     justify-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        height: 120vh;
+    }
 `;
 
 export const ProjectsCard = styled.a`
@@ -82,6 +90,16 @@ export const ProjectsCard = styled.a`
         width: 31vw; 
     }
 
+    @media screen and (max-width: 768px) {
+        width: 80vw;
+        height: 20vh;
+
+        :hover{
+            width: 80vw;
+            height: 20vh;
+        }
+    }
+
     & > img{
         width: 100%;
         max-height: 100%;
@@ -93,6 +111,10 @@ export const ProjectsCard = styled.a`
         background-color: transparent;
         margin-top: 5vh;
         padding: 2px;
+
+        @media screen and (max-width: 768px) {
+        font-size: 2vh;
+    }
     }
 `;
 
@@ -103,4 +125,9 @@ export const BackLink = styled(Link)`
     text-decoration: none;
     left: 0;
     color: white;
+
+    @media screen and (max-width: 768px) {
+        bottom: 0;
+        right: 0;
+    }
 `;

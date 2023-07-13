@@ -25,7 +25,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PixiJs from "../../images/Pixi.png";
-import video from "../../videos/Background_Trim.mp4"
 
 const StartSection = () => {
   return (
